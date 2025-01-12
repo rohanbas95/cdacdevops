@@ -8,7 +8,7 @@ on:
     branches: [main, "fix/*", "feat/*"]
     paths: 
       - 'frontend/**'
-  # workflow_dispatch:
+  workflow_dispatch:
 
 env:
   NODE_VERSION: 20
