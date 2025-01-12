@@ -27,8 +27,20 @@ jobs:
           always-auth: true
           node-version: ${{ env.NODE_VERSION }}
 
-      # - name: 🏗️ Build FrontEnd
-      #   working-directory: ./frontend
-      #   run: |
-      #     npm install
-      #     npm run build
+      - name: 🏗️ Build FrontEnd
+        working-directory: ./frontend
+        run: |
+          npm install
+          npm run build
+
+      - name: 🏗️ Build Product-Service
+        working-directory: ./product-service
+        run: |
+          npm install
+          npm run build
+
+      - name: 🏗️ Build User-Service
+        working-directory: ./user-service
+        run: |
+          npm install
+          npm run build
